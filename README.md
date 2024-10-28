@@ -2,24 +2,21 @@
 
 ### Preview
 
-![messageboard](https://github.com/user-attachments/assets/86e8c84b-e23f-43ce-b03d-9daf479f7258)
+![stock price checker](https://github.com/user-attachments/assets/7a0234ef-6253-4867-abb2-0870c47e237f)
 
 #### Description
 
 Build a full-stack JavaScript app that is functionally similar to the preview above. Click on the preview to be directed to a render.
 
+Note Privacy Considerations: Due to the requirement that only 1 like per IP should be accepted, you will have to save IP addresses. It is important to remain compliant with data privacy laws such as the General Data Protection Regulation. One option is to get permission to save the user's data, but it is much simpler to anonymize it. For this challenge, remember to anonymize IP addresses before saving them to the database.
+
 Write the following tests in tests/2_functional-tests.js:
 
-- Creating a new thread: POST request to /api/threads/{board}
-- Viewing the 10 most recent threads with 3 replies each: GET request to /api/threads/{board}
-- Deleting a thread with the incorrect password: DELETE request to /api/threads/{board} with an invalid delete_password
-- Deleting a thread with the correct password: DELETE request to /api/threads/{board} with a valid delete_password
-- Reporting a thread: PUT request to /api/threads/{board}
-- Creating a new reply: POST request to /api/replies/{board}
-- Viewing a single thread with all replies: GET request to /api/replies/{board}
-- Deleting a reply with the incorrect password: DELETE request to /api/replies/{board} with an invalid delete_password
-- Deleting a reply with the correct password: DELETE request to /api/replies/{board} with a valid delete_password
-- Reporting a reply: PUT request to /api/replies/{board}
+- Viewing one stock: GET request to /api/stock-prices/
+- Viewing one stock and liking it: GET request to /api/stock-prices/
+- Viewing the same stock and liking it again: GET request to /api/stock-prices/
+- Viewing two stocks: GET request to /api/stock-prices/
+- Viewing two stocks and liking them: GET request to /api/stock-prices/
 
 #### User Stories/Tests to pass 
 
